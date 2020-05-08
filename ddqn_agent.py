@@ -2,7 +2,7 @@ import numpy as np
 import random
 from collections import namedtuple, deque
 
-from model import QNetwork
+from model import QNetwork, DuelingQNetwork
 
 import torch
 import torch.nn.functional as F
@@ -37,6 +37,11 @@ class Agent():
         self.qnetwork_local = QNetwork(state_size, action_size, seed).to(device)
         self.qnetwork_target = QNetwork(state_size, action_size, seed).to(device)
         self.optimizer = optim.Adam(self.qnetwork_local.parameters(), lr=LR)
+
+        # Dueling-Q-Network
+        #self.qnetwork_local = DuelingQNetwork(state_size, action_size, seed).to(device)
+        #self.qnetwork_target = DuelingQNetwork(state_size, action_size, seed).to(device)
+        #self.optimizer = optim.Adam(self.qnetwork_local.parameters(), lr=LR)
 
         # Replay memory
         self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, seed)
