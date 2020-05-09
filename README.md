@@ -31,7 +31,7 @@ Three major improvements for the DQN architecture are implemented in this reposi
 
 ## Running the Code
 
-Run the following file for training the RL from scratch for each of the architectures: Comparison_Of_DQNs.ipynb
+Run the following file for training the RL from scratch for each of the architectures: <b>Comparison_Of_DQNs.ipynb</b>
 
 ![Trained Agent Demo](TrainedLander.gif)
 
