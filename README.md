@@ -34,3 +34,7 @@ Three major improvements for the DQN architecture are implemented in this reposi
 Run the following file for training the RL from scratch for each of the architectures: Comparison_Of_DQNs.ipynb
 
 ![Trained Agent Demo](TrainedLander.gif)
+
+## ToDo
+1. Fix plt.savefig issue <br/>
+2. Automate training for Dueling network architecture <br/>
