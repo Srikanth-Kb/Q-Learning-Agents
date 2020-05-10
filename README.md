@@ -36,5 +36,4 @@ Run the following file for training the RL from scratch for each of the architec
 ![Trained Agent Demo](performance/TrainedLander.gif)
 
 ## ToDo
-1. Fix plt.savefig issue <br/>
-2. Automate training for Dueling network architecture <br/>
+1. Automate training for Dueling network architecture <br/>
